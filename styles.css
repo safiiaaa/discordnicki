@@ -1,0 +1,45 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.message {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn.join {
+    background-color: #7289da; /* Discord Blue */
+}
+
+.btn.no {
+    background-color: #7289da; /* Similar to join button */
+}
