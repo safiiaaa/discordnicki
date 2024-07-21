@@ -1,86 +1,77 @@
-/* styles.css */
-body {
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #7289da, #4f5d75);
+    background-color: #2c2f33; /* Dark Discord background */
+    color: #ffffff; /* Light text color */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
 }
 
+/* Container Styles */
 .container {
     text-align: center;
-    background-color: #ffffff;
-    border-radius: 12px;
+    background-color: #23272a; /* Slightly lighter background for the container */
+    border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 1s ease-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.message h1 {
-    font-size: 2em;
+/* Heading Styles */
+h1 {
     margin-bottom: 20px;
-    color: #333;
-    animation: slideIn 1s ease-out;
+    font-size: 24px;
+    color: #ffffff;
 }
 
+/* Discord Widget Styles */
 .discord-widget iframe {
     border: none;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
 }
 
+/* Button Styles */
 .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    margin-top: 20px;
 }
 
 .btn {
     display: inline-block;
-    padding: 15px 25px;
-    margin: 5px;
-    border-radius: 8px;
-    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn.join {
-    background-color: #7289da; /* Discord Blue */
+    background-color: #7289da; /* Discord blue */
+    color: #ffffff;
 }
 
 .btn.no {
-    background-color: #ff4757; /* A contrasting red color */
+    background-color: #99aab5; /* Greyish color for "No" button */
+    color: #ffffff;
 }
 
 .btn:hover {
     transform: scale(1.05);
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.btn.join:hover {
+    background-color: #5b6eae; /* Slightly darker blue */
 }
 
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.btn.no:hover {
+    background-color: #8899a6; /* Slightly darker grey */
 }
